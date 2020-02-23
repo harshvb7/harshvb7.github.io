@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="public/application.css">
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="inner-container">
+        <img src="public/images/photo.jpg" srcset="public/images/photo.jpg" alt="" class="photo">
+
+        {{ content }}
+
+        <ul class="elsewhere">
+          <li class="elsewhere__item"><a href="{{ site.info.medium }}">Medium</a></li>
+          <li class="elsewhere__item"><a href="{{ site.info.github }}">GitHub</a></li>
+          <li class="elsewhere__item"><a href="{{ site.info.linkedin }}">Linkedin</a></li>
+          <li class="elsewhere__item"><a href="{{ site.info.twitter }}">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

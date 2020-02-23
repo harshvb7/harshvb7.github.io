@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+
+.outer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+.inner-container {
+  padding: 40px 20px 70px;
+}
+
+@media only screen and (max-width: 40rem) {
+  .inner-container {
+    padding: 40px 20px;
+  }
+}
+
+.the-pug {
+  margin-bottom: 20px;
+}
+
+.elsewhere {
+  margin-top: 40px;
+}
